@@ -1,5 +1,6 @@
 .project-page {
     /* margin: 10%; */
+    margin: 5% 10% 10% 10%;
     text-transform: lowercase;
     font-size: 20px;
     display: flex;

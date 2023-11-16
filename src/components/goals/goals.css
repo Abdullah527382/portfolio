@@ -3,18 +3,3 @@ li {
     margin: 0 auto;
     width: 90%;
 }
-
-h2 {
-    /* color: #58A4B0; */
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #373F51;
-
-}
-
-h2:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}

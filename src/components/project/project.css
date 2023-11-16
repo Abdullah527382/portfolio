@@ -1,8 +1,9 @@
 .project {
-    margin: 5%;
+    margin: 2%;
     border-radius: 10px;
     text-transform: lowercase;
     border: solid;
+    padding: 3%;
     background-color: white;
     width: 50%;
 }

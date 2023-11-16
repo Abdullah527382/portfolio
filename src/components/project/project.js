@@ -8,7 +8,7 @@ const Project = ({name, description, technologies, link, img_path}) => {
     }
 
     return (
-        <div className="project" onClick={(event) => checkPersonalProject(link)}>
+        <div className="project" onClick={() => checkPersonalProject(link)}>
             <a href={link}>{name}</a>
             <Goals title={description} goals={technologies} type="description"/>
             <hr/>
