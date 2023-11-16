@@ -6,3 +6,11 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 800px) {
+
+    .project-page {
+        flex-direction: column;
+
+    }
+}
