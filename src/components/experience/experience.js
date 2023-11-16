@@ -14,6 +14,15 @@ const Experience = ({experience, index}) => {
                 <h3 style={{display: "inline-block"}}> @ <a href={experience.url}>{experience.company}</a> ({experience.date}) 
                 <ArrowDropDownCircleIcon style={show? {transform: "rotate(180deg)"}: {}} className="experience-icon" onClick={() => setShow(!show)}/>
                  </h3>
+                 <p><strong>Technologies: </strong> {experience.technologies.map(
+                        (technology, index) => (
+                            <span key={index}>{technology} {
+                                index !== experience.technologies.length - 1 ? 
+                                <span> | </span> : ""
+                            
+                            } </span>
+                        )
+                 )}</p>
             </div>
             { show ?
                 <div className="experience-description">
