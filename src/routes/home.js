@@ -1,9 +1,12 @@
 import React from "react";
+import HomePage from "../pages/home/home";
+const HomeRoute = () => {
+    return (
+        <div className="route">
 
-const HomePage = () => {
-    return (<h1>
-        Home page
-    </h1>)
+            <HomePage />
+        </div>
+    )
 }
 
-export default HomePage
+export default HomeRoute

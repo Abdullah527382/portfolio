@@ -1,10 +1,35 @@
-import { Link } from "react-router-dom"
-const Navbar =()=>{
-      return (
-            <div>
-                  <Link to="/">Home</Link>
-                  <Link to="/about">About</Link>
-            </div>
-      )
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./navbar.css";
+import ReorderIcon from "@material-ui/icons/Reorder";
+
+function Navbar() {
+  const [expandNavbar, setExpandNavbar] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setExpandNavbar(false);
+  }, [location]);
+
+  return (
+    <div className="navbar" id={expandNavbar ? "open" : "close"}>
+      <div className="toggleButton">
+        <button
+          onClick={() => {
+            setExpandNavbar((prev) => !prev);
+          }}
+        >
+          <ReorderIcon />
+        </button>
+      </div>
+      <div className="links">
+        <Link to="/"> Home </Link>
+        <Link to="/projects"> Projects </Link>
+        <Link to="/experience"> Experience </Link>
+      </div>
+    </div>
+  );
 }
+
 export default Navbar;

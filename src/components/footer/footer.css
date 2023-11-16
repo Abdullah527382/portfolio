@@ -1,0 +1,26 @@
+.footer {
+    background-color: #373F51;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    /* overflow: hidden; */
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+
+}
+
+.footer-links {
+    color: #D8DBE2;
+}
+
+.footer-logo {
+    margin: 0 30px;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+    color: #58A4B0;
+    cursor: pointer;
+}
