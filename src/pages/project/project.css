@@ -1,6 +1,5 @@
 .project-page {
     /* margin: 10%; */
-    margin: 5% 10% 10% 10%;
     text-transform: lowercase;
     font-size: 20px;
     display: flex;
@@ -8,10 +7,11 @@
     justify-content: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1400px) {
 
     .project-page {
         flex-direction: column;
+        margin: 5% 10% 10% 10%;
 
     }
 }
